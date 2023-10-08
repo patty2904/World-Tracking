@@ -32,14 +32,29 @@
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mt1-TB-Oya"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liT-Nh-2qS">
+                                <rect key="frame" x="293" y="758" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="aLm-LA-n2Z"/>
+                                    <constraint firstAttribute="height" constant="80" id="pZs-Dv-Z5L"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGb-Hf-AfD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xv5-CB-av4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1GM-21-Hqz"/>
+                            <constraint firstItem="liT-Nh-2qS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="6Fy-OA-0fl"/>
                             <constraint firstItem="qFg-R4-Os8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G4u-2E-v74"/>
                             <constraint firstAttribute="bottom" secondItem="xv5-CB-av4" secondAttribute="bottom" id="HbV-X8-kK9"/>
                             <constraint firstItem="xv5-CB-av4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jx3-d2-8Ut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="liT-Nh-2qS" secondAttribute="trailing" constant="20" id="TKu-ee-F4J"/>
                             <constraint firstAttribute="trailing" secondItem="xv5-CB-av4" secondAttribute="trailing" constant="-7" id="lxw-bi-v5v"/>
                             <constraint firstItem="qFg-R4-Os8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="mtj-oZ-PKM"/>
                         </constraints>
@@ -56,6 +71,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
