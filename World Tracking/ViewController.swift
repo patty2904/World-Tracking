@@ -20,5 +20,21 @@ class ViewController: UIViewController {
         self.sceneView.session.run(configuration)
         // Do any additional setup after loading the view.
     }
+    @IBAction func add(_ sender: Any) {
+        let node = SCNNode()
+        //Box has firm edges
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        //Colour is blue
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        //3D Vector X,Y,Z
+        node.position = SCNVector3(0,0,0)
+        //Scene is whats displaying the camera view of real world
+        //Node is inside scene
+        //Root node has no shape, size or colour
+        //positioned where world origin (starting position)
+        
+        //Node is inside camera view
+        self.sceneView.scene.rootNode.addChildNode(node)
+    }
 }
 

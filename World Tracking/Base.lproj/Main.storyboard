@@ -19,14 +19,29 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xv5-CB-av4">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="852"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFg-R4-Os8">
+                                <rect key="frame" x="20" y="758" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="H6O-rY-B7d"/>
+                                    <constraint firstAttribute="width" constant="80" id="Vyf-Ae-7jg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mt1-TB-Oya"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xv5-CB-av4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1GM-21-Hqz"/>
+                            <constraint firstItem="qFg-R4-Os8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G4u-2E-v74"/>
                             <constraint firstAttribute="bottom" secondItem="xv5-CB-av4" secondAttribute="bottom" id="HbV-X8-kK9"/>
                             <constraint firstItem="xv5-CB-av4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jx3-d2-8Ut"/>
                             <constraint firstAttribute="trailing" secondItem="xv5-CB-av4" secondAttribute="trailing" constant="-7" id="lxw-bi-v5v"/>
+                            <constraint firstItem="qFg-R4-Os8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="mtj-oZ-PKM"/>
                         </constraints>
                     </view>
                     <connections>
